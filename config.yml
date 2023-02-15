@@ -1,4 +1,5 @@
 theme: charlolamode
+title: Marco de Freitas
 
 menu:
     main:
@@ -21,9 +22,9 @@ menu:
 params:
     author: Marco de Freitas
     defaultTheme: auto
-    disableThemeToggle: true
-    # ShowShareButtons: true
-    # ShowReadingTime: true
+    disableThemeToggle: false
+    ShowShareButtons: true
+    ShowReadingTime: true
     displayFullLangName: true
     ShowBreadCrumbs: true
     ShowCodeCopyButtons: true
@@ -32,7 +33,7 @@ params:
     profileMode:
         # Disable to populate home page with 'mainSections' content
         enabled: true
-        title: Marco de Freitas
+        title: Hi, I'm Marco!
         description: |
           Remote contractor from Tavira, Portugal.
           
