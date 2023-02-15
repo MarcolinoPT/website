@@ -1,5 +1,23 @@
 theme: charlolamode
 
+menu:
+    main:
+        - name:
+          url: /
+        #   weight: 30
+        # - name: Articles
+        #   url: /articles/
+        #   weight: 20
+        # - name: Projects
+        #   url: /projects/
+        #   weight: 15
+        # - name: Categories
+        #   url: /categories/
+        #   weight: 10
+        # - name: new Tab
+        #   url: /newtab/
+        #   weight: defines order of tabs
+
 params:
     author: Marco de Freitas
     defaultTheme: auto
@@ -23,9 +41,9 @@ params:
           Feel free to reach me out if you want to talk about any idea, projects, mentoring, mock interviews or just having a chat.
         imageUrl: "/images/profile.png"
         imageTitle: me, myself and I
-
-    mainSections:
-      # - articles
+        buttons:
+        #     - name: Don't click me
+        #       url: https://www.youtube.com/watch?v=dQw4w9WgXcQ
 
     socialIcons:
         - name: buymeacoffee
