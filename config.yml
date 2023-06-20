@@ -39,7 +39,9 @@ params:
           
           I work mostly with .NET and JavaScript using agile software development enabling teams to be more human and less machine like.
           
-          Feel free to reach me out if you want to talk about any idea, projects, mentoring, mock interviews or just having a chat.
+          Feel free to reach me out or schedule a call with me at https://calendly.com/marcolinopt.
+
+          We can talk about any idea, projects, mentoring, mock interviews or just have a chat.
         imageUrl: "/images/profile.png"
         imageTitle: me, myself and I
         buttons:
@@ -55,10 +57,6 @@ params:
           url: "https://www.linkedin.com/in/marcolinopt/"
         - name: email
           url: mailto:me@marcodefreitas.com
-        - name: twitter
-          url: "https://www.twitter.com/marcolinopt83"
-        - name: facebook
-          url: "https://www.facebook.com/soulnino"
 
     # change favicon in images folder (icon for web tab)
     assets:
