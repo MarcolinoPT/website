@@ -1,0 +1,15 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} · {{ site.Title }}{{ end }}</title>
+  {{ with .Description }}<meta name="description" content="{{ . | plainify | htmlEscape }}">{{ else }}{{ with site.Params.description }}<meta name="description" content="{{ . | plainify | htmlEscape }}">{{ end }}{{ end }}
+  <meta name="generator" content="Hugo {{ hugo.Version }}">
+  {{ with .Permalink }}<link rel="canonical" href="{{ . }}">{{ end }}
+  <link rel="stylesheet" href="{{ "css/site.css" | relURL }}">
+  {{ with site.Params.assets.favicon }}<link rel="icon" href="{{ . | relURL }}">{{ end }}
+  {{ with site.Params.assets.favicon16x16 }}<link rel="icon" type="image/png" sizes="16x16" href="{{ . | relURL }}">{{ end }}
+  {{ with site.Params.assets.favicon32x32 }}<link rel="icon" type="image/png" sizes="32x32" href="{{ . | relURL }}">{{ end }}
+  {{ with site.Params.assets.apple_touch_icon }}<link rel="apple-touch-icon" href="{{ . | relURL }}">{{ end }}
+  {{ with .OutputFormats.Get "RSS" }}<link rel="alternate" type="application/rss+xml" title="{{ site.Title }}" href="{{ .RelPermalink }}">{{ end }}
+</head>
