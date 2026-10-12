@@ -1,0 +1,31 @@
+{{ define "main" }}
+<section class="prose-page shell">
+  <header class="page-heading">
+    {{ with .Params.kicker }}<p class="eyebrow">{{ . }}</p>{{ end }}
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p class="page-description">{{ . }}</p>{{ end }}
+  </header>
+  {{ with .Content }}<div class="prose">{{ . }}</div>{{ end }}
+  {{ $pages := .RegularPages.ByDate.Reverse }}
+  {{ if $pages }}
+    <div class="entry-list">
+      {{ range $pages }}
+      <article class="entry-card">
+        <div>
+          {{ with .Date }}<p class="entry-date"><time datetime="{{ .Format "2006-01-02" }}">{{ .Format "Jan 2, 2006" }}</time></p>{{ end }}
+          <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+          {{ with .Description }}<p>{{ . }}</p>{{ else }}<p>{{ .Summary | plainify | truncate 180 }}</p>{{ end }}
+        </div>
+        <a class="entry-arrow" href="{{ .RelPermalink }}" aria-label="Read {{ .Title }}">↗</a>
+      </article>
+      {{ end }}
+    </div>
+  {{ else }}
+    {{ if eq .Section "projects" }}
+    <div class="quiet-note"><span aria-hidden="true">↗</span><p>This space is ready for selected projects and experiments. I’ll add write-ups when there’s something useful to share, while respecting client confidentiality.</p></div>
+    {{ else if eq .Section "writing" }}
+    <div class="quiet-note"><span aria-hidden="true">✳</span><p>No published notes just yet. When I have something worth writing down, it’ll find its way here.</p></div>
+    {{ end }}
+  {{ end }}
+</section>
+{{ end }}
