@@ -5,7 +5,6 @@
   <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} · {{ site.Title }}{{ end }}</title>
   {{ with .Description }}<meta name="description" content="{{ . | plainify | htmlEscape }}">{{ else }}{{ with site.Params.description }}<meta name="description" content="{{ . | plainify | htmlEscape }}">{{ end }}{{ end }}
   <meta name="generator" content="Hugo {{ hugo.Version }}">
-  {{ with .Permalink }}<link rel="canonical" href="{{ . }}">{{ end }}
   <link rel="stylesheet" href="{{ "css/site.css" | relURL }}">
   {{ with site.Params.assets.favicon }}<link rel="icon" href="{{ . | relURL }}">{{ end }}
   {{ with site.Params.assets.favicon16x16 }}<link rel="icon" type="image/png" sizes="16x16" href="{{ . | relURL }}">{{ end }}
