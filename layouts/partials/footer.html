@@ -1,0 +1,13 @@
+<footer class="site-footer">
+  <div class="shell footer-inner">
+    <p>Made thoughtfully in Tavira, Portugal.</p>
+    <div class="social-links" aria-label="Elsewhere on the web">
+      {{ range site.Params.socialIcons }}
+        {{ $label := .name | title }}
+        {{ if eq .name "buymeacoffee" }}{{ $label = "Ko-fi" }}{{ end }}
+        <a href="{{ .url }}"{{ if hasPrefix .url "http" }} target="_blank" rel="me noopener noreferrer"{{ end }}>{{ $label }}</a>
+      {{ end }}
+    </div>
+    <p class="copyright">© {{ now.Year }} {{ site.Params.author | default site.Title }}</p>
+  </div>
+</footer>
