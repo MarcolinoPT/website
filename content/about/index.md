@@ -12,7 +12,7 @@ Most of my professional work revolves around **.NET, JavaScript, and helping tea
 
 I value thoughtful engineering, pragmatic decisions, and collaboration that leaves room for people to do their best work. I’m happy to talk about projects, mentoring, mock interviews, or an idea that needs a sounding board.
 
-[Email me](mailto:me@marcodefreitas.com) if you’d like to chat.
+[Email me](mailto:marcogfreitas@gmail.com) if you’d like to chat.
 
 ## Beyond work
 
