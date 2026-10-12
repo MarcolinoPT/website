@@ -1,0 +1,12 @@
+<header class="site-header">
+  <div class="shell header-inner">
+    <a class="wordmark" href="{{ "/" | relURL }}" aria-label="{{ site.Title }} home">marco<span>.</span></a>
+    <nav class="primary-nav" aria-label="Main navigation">
+      <a href="{{ "/" | relURL }}"{{ if .IsHome }} aria-current="page"{{ end }}>Home</a>
+      <a href="{{ "/about/" | relURL }}"{{ if eq .RelPermalink "/about/" }} aria-current="page"{{ end }}>About</a>
+      <a href="{{ "/projects/" | relURL }}"{{ if eq .Section "projects" }} aria-current="page"{{ end }}>Projects</a>
+      <a href="{{ "/interests/" | relURL }}"{{ if eq .RelPermalink "/interests/" }} aria-current="page"{{ end }}>Interests</a>
+      <a href="{{ "/writing/" | relURL }}"{{ if eq .Section "writing" }} aria-current="page"{{ end }}>Writing</a>
+    </nav>
+  </div>
+</header>
