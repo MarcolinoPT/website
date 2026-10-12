@@ -1,0 +1,34 @@
+name: Hugo build
+
+on:
+  push:
+    branches:
+      - "redesign/**"
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Build static site
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository and theme
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Set up Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: "0.147.9"
+          extended: true
+
+      - name: Build
+        run: hugo --gc --minify --destination public
+
+      - name: Verify generated homepage
+        run: test -s public/index.html
