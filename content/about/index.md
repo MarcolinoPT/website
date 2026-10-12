@@ -12,7 +12,7 @@ Most of my professional work revolves around **.NET, JavaScript, and helping tea
 
 I value thoughtful engineering, pragmatic decisions, and collaboration that leaves room for people to do their best work. I’m happy to talk about projects, mentoring, mock interviews, or an idea that needs a sounding board.
 
-[Schedule a conversation](https://calendly.com/marcolinopt) if you’d like to chat.
+[Schedule a conversation](https://calendar.app.google/d5tVtoP6XEpbNiwb8) if you’d like to chat.
 
 ## Beyond work
 
